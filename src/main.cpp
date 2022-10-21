@@ -5,7 +5,7 @@
 int main() {
     Engine engine;
 
-    if (!engine.buffer.loadFromFile("sound.wav")) {
+    if (!engine.buffer.loadFromFile("assets/sound.wav")) {
 	std::cerr << "Error while loading sound file" << std::endl;
 	return -1;
     }

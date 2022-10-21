@@ -62,7 +62,7 @@ void Engine::initGui() {
 
 
     // Font rendering
-    font.loadFromFile("fairfax.ttf");
+    font.loadFromFile("assets/fairfax.ttf");
     countTxt.setFont(font);
     countTxt.setString(std::to_string(0));
     countTxt.setCharacterSize(48);
