@@ -28,10 +28,10 @@ bool Box::collide(Box &other) {
 }
 
 void Box::bounce(Box &other) {
-    double newV1 = ((m - other.m) / (m + other.m) * v) + ((2 * other.m) / (m + other.m) * other.v);
-    double newV2 = ((2 * m) / (m + other.m) * v) + ((other.m - m) / (m + other.m) * other.v);
+    double v1 = ((m - other.m) / (m + other.m) * v) + ((2 * other.m) / (m + other.m) * other.v);
+    double v2 = ((2 * m) / (m + other.m) * v) + ((other.m - m) / (m + other.m) * other.v);
 
-    v = newV1;
-    other.v = newV2;
+    v = v1;
+    other.v = v2;
 }
 

@@ -23,10 +23,11 @@ void Engine::initBox(Box &box, int size, int posX, int posY, sf::Color color, do
 
 void Engine::initVariables() {
     pause = false;
-
-    // Manage the decimals numbers of PI increasing scale:timesteps.
     count = 0;
-    scale = 7;
+
+    // Manage the decimals numbers of PI increasing in a ratio of 1:scale.
+    // Timesteps implements the Euler Integration for a better precision.
+    scale = 6;
     timesteps = pow(10, scale-3);
 
     boxSize1 = 200;
