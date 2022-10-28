@@ -3,6 +3,6 @@
 echo "BUILDING:
 "
 
-g++ -Wall -Wextra /home/tontuu/Code/CPP/hitdapie/src/*.cpp -o ../main -lsfml-graphics -lsfml-system -lsfml-window -lsfml-audio
+g++ -Wall -Wextra src/*.cpp -o main -lsfml-graphics -lsfml-system -lsfml-window -lsfml-audio
 
 # &&./main > /dev/null 2>&1 
